@@ -52,7 +52,7 @@ extension SecondViewController: UITableViewDelegate, UITableViewDataSource {
         let profile = profiles[indexPath.row]
         tableViewCell.name.text = profile.name
         tableViewCell.secondName.text = profile.secondName
-        tableViewCell.age.text = profile.age.formatted()
+        tableViewCell.age.text = "\(profile.age)"
         return tableViewCell
     }
 }

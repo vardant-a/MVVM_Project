@@ -26,8 +26,11 @@ extension MainTabBarController {
         let secondVC = SecondViewController()
         secondVC.tabBarItem = UITabBarItem(
             title: "Second", image: UIImage(systemName: "2.circle"), tag: 1)
+        let thirdVC = ThirdViewController()
+        thirdVC.tabBarItem = UITabBarItem(
+            title: "Third", image: UIImage(systemName: "3.circle"), tag: 1)
         
-        viewControllers = [firstVC, secondVC]
+        viewControllers = [firstVC, secondVC, thirdVC]
     }
 }
 

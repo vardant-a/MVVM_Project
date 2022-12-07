@@ -23,6 +23,6 @@ class ProfileViewModel {
     }
     
     var age: String {
-        return profile.age.formatted()
+        return "\(profile.age)"
     }
 }
