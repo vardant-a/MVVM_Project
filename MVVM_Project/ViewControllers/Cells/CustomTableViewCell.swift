@@ -12,14 +12,22 @@ class CustomTableViewCell: UITableViewCell {
     
     // MARK: - Private Properties
     var name = UILabel()
-    var secondName = UILabel()
     var age = UILabel()
+    
+    weak var viewModel: TableViewCellViewModelType? {
+        willSet(viewModel) {
+            guard let viewModel = viewModel else { return }
+            
+            name.text = viewModel.fullName
+            age.text = viewModel.age
+        }
+    }
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         backgroundColor = .brown
-        addElementsForCell(name, secondName, age)
+        addElementsForCell(name, age)
         addConstrains()
     }
     
@@ -44,12 +52,6 @@ extension CustomTableViewCell {
         NSLayoutConstraint.activate([
             name.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
             name.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16)
-        ])
-        
-        secondName.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            secondName.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-            secondName.leadingAnchor.constraint(equalTo: name.trailingAnchor, constant: 10)
         ])
         
         age.translatesAutoresizingMaskIntoConstraints = false

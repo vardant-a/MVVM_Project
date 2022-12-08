@@ -11,7 +11,7 @@ import UIKit
 
 final class SecondViewController: UIViewController {
 
-    var viewModel: TableViewModelType?
+    var viewModel: TableViewViewModelType?
     
     // MARK: - Private lazy properties
     
@@ -42,19 +42,34 @@ final class SecondViewController: UIViewController {
 extension SecondViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel?.numberOfRows ?? 0
+        return viewModel?.numberOfRows() ?? 0
     }
+    
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: CustomTableViewCell.cellID, for: indexPath) as? CustomTableViewCell
+//
+//        guard let tableViewCell = cell,
+//                let viewModel = viewModel else { return UITableViewCell() }
+//
+//        let profile = viewModel.profiles[indexPath.row]
+//        
+//        tableViewCell.name.text = profile.name
+//        tableViewCell.secondName.text = profile.secondName
+//        tableViewCell.age.text = "\(profile.age)"
+//
+//        return tableViewCell
+//    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CustomTableViewCell.cellID, for: indexPath) as? CustomTableViewCell
         
-        guard let tableViewCell = cell,
-                let viewModel = viewModel else { return UITableViewCell() }
+        guard let tableViewCell = cell, let viewModel = viewModel else {
+            return UITableViewCell()
+        }
         
-        let profile = viewModel.profiles[indexPath.row]
-        tableViewCell.name.text = profile.name
-        tableViewCell.secondName.text = profile.secondName
-        tableViewCell.age.text = "\(profile.age)"
+        let cellViewModel = viewModel.cellViewModel(forIndexPath: indexPath)
+        tableViewCell.viewModel = cellViewModel
+        
         return tableViewCell
     }
     
