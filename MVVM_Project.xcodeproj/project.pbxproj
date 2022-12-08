@@ -20,6 +20,8 @@
 		0E7E927F2940CF2A00A03D7D /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7E927E2940CF2A00A03D7D /* SettingViewModel.swift */; };
 		0E7E92832940ED7900A03D7D /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7E92822940ED7900A03D7D /* ButtonTableViewCell.swift */; };
 		0E7E928929412F3F00A03D7D /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7E928829412F3F00A03D7D /* ThirdViewController.swift */; };
+		0EF35264294223F40009A0CF /* SecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF35263294223F40009A0CF /* SecondViewModel.swift */; };
+		0EF3526729422A620009A0CF /* TableViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF3526629422A620009A0CF /* TableViewModelType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		0E7E927E2940CF2A00A03D7D /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
 		0E7E92822940ED7900A03D7D /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
 		0E7E928829412F3F00A03D7D /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		0EF35263294223F40009A0CF /* SecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewModel.swift; sourceTree = "<group>"; };
+		0EF3526629422A620009A0CF /* TableViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModelType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 		0E7E925A2940AC6E00A03D7D /* MVVM_Project */ = {
 			isa = PBXGroup;
 			children = (
+				0EF3526529422A400009A0CF /* Protocols */,
 				0E7E926F2940AD0A00A03D7D /* Application */,
 				0E7E92732940AEC300A03D7D /* ViewControllers */,
 				0E7E92722940AEB600A03D7D /* Model */,
@@ -115,6 +120,7 @@
 			children = (
 				0E7E92752940B31800A03D7D /* ProfileViewModel.swift */,
 				0E7E927E2940CF2A00A03D7D /* SettingViewModel.swift */,
+				0EF35263294223F40009A0CF /* SecondViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -126,6 +132,14 @@
 				0E7E92822940ED7900A03D7D /* ButtonTableViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		0EF3526529422A400009A0CF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0EF3526629422A620009A0CF /* TableViewModelType.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,8 +216,10 @@
 				0E7E92602940AC6E00A03D7D /* FirstViewController.swift in Sources */,
 				0E7E927C2940BBFA00A03D7D /* CustomTableViewCell.swift in Sources */,
 				0E7E92712940AE8C00A03D7D /* Profile.swift in Sources */,
+				0EF35264294223F40009A0CF /* SecondViewModel.swift in Sources */,
 				0E7E925C2940AC6E00A03D7D /* AppDelegate.swift in Sources */,
 				0E7E928929412F3F00A03D7D /* ThirdViewController.swift in Sources */,
+				0EF3526729422A620009A0CF /* TableViewModelType.swift in Sources */,
 				0E7E927A2940B59B00A03D7D /* SecondViewController.swift in Sources */,
 				0E7E925E2940AC6E00A03D7D /* SceneDelegate.swift in Sources */,
 				0E7E92832940ED7900A03D7D /* ButtonTableViewCell.swift in Sources */,

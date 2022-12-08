@@ -13,11 +13,14 @@ final class ButtonTableViewCell: UITableViewCell {
     
     private lazy var button: UIButton = {
         let button = UIButton(type: .system)
+        
         button.setTitle("Test", for: .normal)
         button.backgroundColor = .systemGray3
         button.setTitleColor(.red, for: .normal)
         button.layer.cornerRadius = 8
+        
         button.addTarget(target, action: #selector(testAction), for: .touchUpInside)
+        
         return button
     }()
 
