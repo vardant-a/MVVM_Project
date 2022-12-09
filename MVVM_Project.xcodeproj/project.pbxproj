@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E6D4FBD2943D35800936230 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6D4FBC2943D35800936230 /* SettingsViewController.swift */; };
+		0E6D4FBF2943D4F900936230 /* AdaptedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6D4FBE2943D4F900936230 /* AdaptedTableView.swift */; };
 		0E7E925C2940AC6E00A03D7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7E925B2940AC6E00A03D7D /* AppDelegate.swift */; };
 		0E7E925E2940AC6E00A03D7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7E925D2940AC6E00A03D7D /* SceneDelegate.swift */; };
 		0E7E92602940AC6E00A03D7D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7E925F2940AC6E00A03D7D /* FirstViewController.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E6D4FBC2943D35800936230 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		0E6D4FBE2943D4F900936230 /* AdaptedTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptedTableView.swift; sourceTree = "<group>"; };
 		0E7E92582940AC6E00A03D7D /* MVVM_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E7E925B2940AC6E00A03D7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E7E925D2940AC6E00A03D7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +115,8 @@
 				0E7E925F2940AC6E00A03D7D /* FirstViewController.swift */,
 				0E7E92792940B59B00A03D7D /* SecondViewController.swift */,
 				0E7E928829412F3F00A03D7D /* ThirdViewController.swift */,
+				0E6D4FBC2943D35800936230 /* SettingsViewController.swift */,
+				0E6D4FBE2943D4F900936230 /* AdaptedTableView.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -221,10 +227,12 @@
 				0E7E928929412F3F00A03D7D /* ThirdViewController.swift in Sources */,
 				0EF3526729422A620009A0CF /* TableViewModelType.swift in Sources */,
 				0E7E927A2940B59B00A03D7D /* SecondViewController.swift in Sources */,
+				0E6D4FBD2943D35800936230 /* SettingsViewController.swift in Sources */,
 				0E7E925E2940AC6E00A03D7D /* SceneDelegate.swift in Sources */,
 				0E7E92832940ED7900A03D7D /* ButtonTableViewCell.swift in Sources */,
 				0E7E927F2940CF2A00A03D7D /* SettingViewModel.swift in Sources */,
 				0E7E92782940B48700A03D7D /* MainTabBarController.swift in Sources */,
+				0E6D4FBF2943D4F900936230 /* AdaptedTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

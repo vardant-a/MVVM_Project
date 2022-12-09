@@ -20,7 +20,7 @@ final class MainTabBarController: UITabBarController {
 
 extension MainTabBarController {
     private func addTabForBar() {
-        let firstVC = FirstViewController()
+        let firstVC = SettingsViewController()
         firstVC.tabBarItem = UITabBarItem(
             title: "First", image: UIImage(systemName: "1.circle"), tag: 0)
         let secondVC = SecondViewController()
@@ -28,9 +28,12 @@ extension MainTabBarController {
             title: "Second", image: UIImage(systemName: "2.circle"), tag: 1)
         let thirdVC = ThirdViewController()
         thirdVC.tabBarItem = UITabBarItem(
-            title: "Third", image: UIImage(systemName: "3.circle"), tag: 1)
+            title: "Third", image: UIImage(systemName: "3.circle"), tag: 2)
+        let fourthVC = FirstViewController()
+        fourthVC.tabBarItem = UITabBarItem(
+            title: "Fourth", image: UIImage(systemName: "4.circle"), tag: 3)
         
-        viewControllers = [firstVC, secondVC, thirdVC]
+        viewControllers = [firstVC, secondVC, thirdVC, fourthVC]
     }
 }
 

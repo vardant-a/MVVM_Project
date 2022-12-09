@@ -12,7 +12,7 @@ protocol TableViewViewModelType {
     func cellViewModel(forIndexPath indexPath: IndexPath) -> TableViewCellViewModelType?
 }
 
-protocol TableViewCellViewModelType: class {
+protocol TableViewCellViewModelType: AnyObject {
     var fullName: String { get }
     var age: String { get }
 }
